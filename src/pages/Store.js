@@ -8,11 +8,11 @@ const Store = () => {
     <div>
       <h1>Welcome to the store .</h1>
       <Row xs={1} md={3} className="g-4">
-        <Col align="center">
-          {productArray.map((product) => (
+        {productArray.map((product) => (
+          <Col align="center">
             <ProductCard key={product.id} product={product} />
-          ))}
-        </Col>
+          </Col>
+        ))}
       </Row>
     </div>
   );
